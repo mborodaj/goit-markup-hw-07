@@ -1,0 +1,56 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/utils";
+@import "./components/common/logo";
+@import "./components/common/header";
+@import "./components/common/footer";
+@import "./components/common/modal";
+@import "./components/common/button";
+@import "./components/main/hero";
+@import "./components/main/advantages";
+@import "./components/main/direction";
+@import "./components/main/team";
+@import "./components/main/clients";
+@import "./components/portfolio/filter";
+@import "./components/portfolio/examples";
+
+body {
+	background-color: $primary-white-color;
+	color: $paragraph-text-color;
+	font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+ul {
+	@extend %list; //test
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.66;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $heading-text-color;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
